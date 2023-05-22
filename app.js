@@ -2,23 +2,23 @@
 function getEmploeeId() {
     return Math.floor(Math.random() * 9000) + 1000;}
 
- function employeeSalary(level)
+ function employeeSalary(Level)
 { 
     let min;
     let max;
-    if (level=="Senior"){
+    if (Level=="Senior"){
         min=1500;
         max=2000;
         let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
         return rand.toString();
     }
-    else if (level=='Mid-Senior'){
+    else if (Level=='Mid-Senior'){
     min=1000;
     max=1500;
     let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
     return rand.toString();
 }
-    else if (level=="Junior"){
+    else if (Level=="Junior"){
         min=500;
         max=1000;
         let rand=Math.floor(Math.random() * (max - min +1) ) +(min) ;
@@ -26,7 +26,8 @@ function getEmploeeId() {
     }
     // let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
     let sal=rand-(rand*0.075);
-    this.salary=sal;
+    // this.salary=sal;
+    return sal;
 
 }
 
@@ -130,24 +131,25 @@ let Hadi={
     salary:0
     }
 Hadi.salary=employeeSalary(Hadi.Level);
-
- console.log(Hadi.employeeID);
+console.log(Hadi.employeeID);
 console.table(Hadi)
  console.log(Hadi);
  console.log(Hadi.salary);
-function output(){
+
+let employees = [Ghazi, Lana, Tamara, Safi, Omar, Rana, Hadi];
+function renderEmployees() {
+    let employeeList = "";
+    for (let i = 0; i < employees.length; i++) {
+      let employee = employees[i];
+      employeeList += "Employee name: " + employee.FullName + "<br>";
+      employeeList += "Employee salary: " + employee.salary + "<br><br>";
+    }
+    document.getElementById("employee-list").innerHTML = employeeList;
+  }
+  
+  renderEmployees();
 
 
-document.getElementById(demo).innerHTML=`Employee name${Ghazi.FullName} ${Ghazi.salary}`;
-document.getElementById(luna).innerHTML=`Employee name${Lana.FullName} ${Lana.salary}`;
-document.getElementById(tam).innerHTML=`Employee name${Tamara.FullName}${Tamara.salary}`;
-document.getElementById(sav).innerHTML=`Employee name${Safi.FullName} ${Safi.salary}`;
-document.getElementById(om).innerHTML=`Employee name${Omar.FullName} ${Omar.salary}`;
-document.getElementById(hd).innerHTML=`Employee name${Hadi.FullName} ${Hadi.salary}`;
-document.getElementById(rn).innerHTML=`Employee name${Rana.FullName} ${Rana.salary}`;
-
-}
-console.log(output);
 
 
 
