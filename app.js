@@ -9,24 +9,23 @@ function getEmploeeId() {
     if (Level=="Senior"){
         min=1500;
         max=2000;
-        let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
-        return rand.toString();
+        // let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
+        // return rand.toString();
     }
     else if (Level=='Mid-Senior'){
     min=1000;
     max=1500;
-    let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
-    return rand.toString();
+    // let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
+    // return rand.toString();
 }
     else if (Level=="Junior"){
         min=500;
         max=1000;
-        let rand=Math.floor(Math.random() * (max - min +1) ) +(min) ;
-        return rand.toString();
+        // let rand=Math.floor(Math.random() * (max - min +1) ) +(min) ;
+        // return rand.toString();
     }
-    // let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
+    let rand=Math.floor(Math.random() * (max - min) ) +(min) ;
     let sal=rand-(rand*0.075);
-    // this.salary=sal;
     return sal;
 
 }
