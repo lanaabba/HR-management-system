@@ -36,7 +36,7 @@ employeeID: getEmploeeId(),
     FullName: 'Ghazi Samer',
     Department:'Administration',
     Level: 'Senior',
-    imageURL:'https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?b=1&s=170667a&w=0&k=20&c=lrHSjzuqKIAC76-vpOhzR7pRsP38DGPWt7x7SOFbm0Q=',
+    imageURL:'./img/im1.jpg',
     salary: 0
 
      }
@@ -52,7 +52,7 @@ let Lana ={
     FullName: 'Lana Ali',
     Department:'Finance',
     Level: 'Senior',
-    imageURL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRfCLKwQdIpeyObKwn7C5es0RJZuARFwIzmrQb-XU20pH8y3L8J8e_-l8N4rB6C50CbU&usqp=CAU',
+    imageURL:'./img/i2.jpg',
     salary: 0
 
     }
@@ -68,7 +68,7 @@ let Tamara={
     FullName: 'Tamara Ayoub	',
     Department:'Marketing',
     Level: 'Senior',
-    imageURL:'https://burst.shopifycdn.com/photos/professional-smiling-woman.jpg?width=1200&format=pjpg&exif=1&iptc=1',
+    imageURL:'./img/im3.jpg',
     salary: 0
     
     }
@@ -83,7 +83,7 @@ let Safi={
     FullName: 'Safi Walid	',
     Department:'Administration	',
     Level: 'Mid-Senior',
-    imageURL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu-70hzgEWdk8jm8QeI8-lHHOe6ja0JzEMA&usqp=CAU',
+    imageURL:'./img/4.jpg',
     salary: 0
     }
 Safi.salary=employeeSalary(Safi.Level);
@@ -97,7 +97,7 @@ let Omar={
     FullName: 'Omar Zaid',
     Department:'Development	',
     Level: 'Senior',
-    imageURL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6PA1JiPeWmmpaVxgrVcuMz_aIO1tRFJEPw&usqp=CAU',
+    imageURL:'./img/5.jpg',
     salary: 0
     }
 Omar.salary=employeeSalary(Omar.Level);
@@ -111,7 +111,7 @@ let Rana={
     FullName: '	Rana Saleh	',
     Department:'Development',
      Level: 'Junior',
-     imageURL:'',
+     imageURL:'./img/6.jpg',
      salary: 0,
 
     }
@@ -126,7 +126,7 @@ let Hadi={
     FullName: 'Hadi Ahmad',
     Department:'Administration	',
     Level: 'Mid-Senior',
-    imageURL:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkD1jxA_a9DDqO0fXW8BjM-oGHwoQ86LfQXA&usqp=CAU',
+    imageURL:'./img/7.jpg',
     salary:0
     }
 Hadi.salary=employeeSalary(Hadi.Level);
