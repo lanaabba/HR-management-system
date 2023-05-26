@@ -1,4 +1,5 @@
 'use strict';
+
 function hrManagement (id,Name,department,level,image,salary){
    this.employeeID=id;
    this.FullName=Name;
@@ -33,6 +34,8 @@ function getEmploeeId() {
         return sal;
     
     }
+
+
     
 let Ghazi = new hrManagement(getEmploeeId,'Ghazi Samer','Administration','Senior', './img/im1.jpg',employeeSalary("Senior"));
 let Lana = new hrManagement(getEmploeeId,'Lana Ali','Finance','Senior', './img/i2.jpg',employeeSalary("Senior"));
@@ -42,18 +45,22 @@ let Omar= new hrManagement(getEmploeeId,'Omar Zaid','Development','Mid-Senior', 
 let Rana= new hrManagement(getEmploeeId,'Rana Saleh','Development','Junior', './img/6.jpg',employeeSalary("Junior"));
 let Hadi= new hrManagement(getEmploeeId,'Hadi Ahmad','Administration','Mid-Senior', './img/7.jpg',employeeSalary("Mid-Senior"));
 
-
+   
+   
 let employees = [Ghazi, Lana, Tamara, Safi, Omar, Rana, Hadi];
-function renderEmployees() {
-    let employeeList = "";
-    for (let i = 0; i < employees.length; i++) {
-      let employee = employees[i];
-      employeeList += "Employee name: " + employee.FullName + "<br>";
-      employeeList += "Employee name: " + employee.Department + "<br>";
-     employeeList += "Employee salary: " + employee.salary + "<br><br>";
+
+     hrManagement.prototype.renderEmployees=function(){
+        document.write(`<h4>Employee name: ${this.FullName}</h4>`);
+        document.write(`<h4>Department : ${this.Department}</h4>`);
+        document.write(`<h4>Employee salary: ${this.salary}</h4>`);
+     }
+     function renderEmployees() {
+        let employeeList = "";
+        for (let i = 0; i < employees.length; i++)
+         { employees[i]}
     }
-    document.getElementById("employee-list").innerHTML = employeeList;
-  }
+
+ 
 
 
   renderEmployees();
@@ -66,3 +73,43 @@ Rana.renderEmployees();
 Hadi.renderEmployees();
 
 
+
+//   renderEmployees();
+// Ghazi.renderEmployees();
+// Lana.renderEmployees();
+// Tamara.renderEmployees();
+// Safi.renderEmployees();
+// Omar.renderEmployees();
+// Rana.renderEmployees();
+// Hadi.renderEmployees();
+
+// console.table(Ghazi);
+// console.table(Lana);
+// console.table(Tamara);
+// console.table(Safi);
+// console.table(Omar);
+// console.table(Rana);
+// console.table(Hadi);
+
+
+// let employees = [Ghazi, Lana, Tamara, Safi, Omar, Rana, Hadi];
+
+
+
+// for (let index = 0; index <employees.length; index++) {
+//    employees[index].renderEmployees();
+
+    
+// } 
+
+// // hrManagement.prototype.renderEmployees = function() {
+// //   let employeeList = "";
+    //  hrManagement.prototype.renderEmployees=function(){
+    //    document.write(`<h1>Employee name: ${this.getEmploeeId}</h1>`);
+    //    document.write(`<h1>Department ${this.Department}</h1>`);
+    //    document.write(`<h1>Employee salary: ${this.salary}</h1>`)
+    // }
+
+
+
+ 
